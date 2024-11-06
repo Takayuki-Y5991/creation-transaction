@@ -1,0 +1,11 @@
+{:paths ["src", "resources"]
+ :deps {org.clojure/clojurescript {:mvn/version "1.11.132"}
+        thheller/shadow-cljs {:mvn/version "2.28.19"}
+        re-frame/re-frame {:mvn/version "1.4.3"}
+        metosin/reitit {:mvn/version "0.7.2"}
+        metosin/reitit-frontend {:mvn/version "0.7.2"}
+        metosin/reitit-spec {:mvn/version "0.7.2"}
+        metosin/malli {:mvn/version "0.16.4"}
+        day8.re-frame/http-fx {:mvn/version "0.2.4"}
+        }
+ }

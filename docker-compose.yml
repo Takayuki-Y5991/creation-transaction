@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - DATOMIC_URI=datomic:dev://datomic:4334/artist-platform
+      - ENV=development
+    volumes:
+      - ./api:/app
+    depends_on:
+      - datomic
+
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app:/app
+    environment:
+      - API_URL=http://api:3000
+
+  datomic:
+    image: datomic/datomic-free
+    ports:
+      - "4334:4334"
+      - "4335:4335"
+    environment:
+      - DATOMIC_HOST=datomic
+      - DATOMIC_ALT_HOST=datomic

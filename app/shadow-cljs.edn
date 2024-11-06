@@ -1,0 +1,20 @@
+{
+ :source-paths ["src"]
+ :dependencies [[binaryage/devtools "1.0.7"] 
+                [re-frame "1.4.3"]
+                [metosin/reitit "0.7.2"]
+                [metosin/reitit-frontend "0.7.2"]
+                [metosin/reitit-spec "0.7.2"]
+                [metosin/malli "0.16.4"]
+                [day8.re-frame/http-fx "0.2.4"]]
+ :dev-http {8080 "resources/public"}
+ :builds {
+          :app {
+            :target :browser
+                :output-dir "resources/public/js"
+                :asset-path "/js"
+                :modules {:app {:init-fn creation-platform.core/init}}
+                :devtools {:preloads [devtools.preload]}
+          }
+ }
+ }
