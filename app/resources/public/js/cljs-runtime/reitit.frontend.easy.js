@@ -45,8 +45,8 @@ return (on_navigate.cljs$core$IFn$_invoke$arity$2 ? on_navigate.cljs$core$IFn$_i
  *   differently, convert the collections to strings first.
  */
 reitit.frontend.easy.href = (function reitit$frontend$easy$href(var_args){
-var G__27069 = arguments.length;
-switch (G__27069) {
+var G__31311 = arguments.length;
+switch (G__31311) {
 case 1:
 return reitit.frontend.easy.href.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -102,8 +102,8 @@ return reitit.frontend.history.href.cljs$core$IFn$_invoke$arity$5(cljs.core.dere
  *   https://developer.mozilla.org/en-US/docs/Web/API/History/pushState
  */
 reitit.frontend.easy.push_state = (function reitit$frontend$easy$push_state(var_args){
-var G__27080 = arguments.length;
-switch (G__27080) {
+var G__31316 = arguments.length;
+switch (G__31316) {
 case 1:
 return reitit.frontend.easy.push_state.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -159,8 +159,8 @@ return reitit.frontend.history.push_state.cljs$core$IFn$_invoke$arity$5(cljs.cor
  *   https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState
  */
 reitit.frontend.easy.replace_state = (function reitit$frontend$easy$replace_state(var_args){
-var G__27087 = arguments.length;
-switch (G__27087) {
+var G__31322 = arguments.length;
+switch (G__31322) {
 case 1:
 return reitit.frontend.easy.replace_state.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -218,8 +218,8 @@ return reitit.frontend.history.replace_state.cljs$core$IFn$_invoke$arity$5(cljs.
  *   https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState
  */
 reitit.frontend.easy.navigate = (function reitit$frontend$easy$navigate(var_args){
-var G__27094 = arguments.length;
-switch (G__27094) {
+var G__31324 = arguments.length;
+switch (G__31324) {
 case 1:
 return reitit.frontend.easy.navigate.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -238,14 +238,14 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 return reitit.frontend.history.navigate.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(reitit.frontend.easy.history),name);
 }));
 
-(reitit.frontend.easy.navigate.cljs$core$IFn$_invoke$arity$2 = (function (name,p__27096){
-var map__27097 = p__27096;
-var map__27097__$1 = cljs.core.__destructure_map(map__27097);
-var opts = map__27097__$1;
-var path_params = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27097__$1,new cljs.core.Keyword(null,"path-params","path-params",-48130597));
-var query_params = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27097__$1,new cljs.core.Keyword(null,"query-params","query-params",900640534));
-var replace = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27097__$1,new cljs.core.Keyword(null,"replace","replace",-786587770));
-var fragment = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27097__$1,new cljs.core.Keyword(null,"fragment","fragment",826775688));
+(reitit.frontend.easy.navigate.cljs$core$IFn$_invoke$arity$2 = (function (name,p__31325){
+var map__31326 = p__31325;
+var map__31326__$1 = cljs.core.__destructure_map(map__31326);
+var opts = map__31326__$1;
+var path_params = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__31326__$1,new cljs.core.Keyword(null,"path-params","path-params",-48130597));
+var query_params = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__31326__$1,new cljs.core.Keyword(null,"query-params","query-params",900640534));
+var replace = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__31326__$1,new cljs.core.Keyword(null,"replace","replace",-786587770));
+var fragment = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__31326__$1,new cljs.core.Keyword(null,"fragment","fragment",826775688));
 return reitit.frontend.history.navigate.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(reitit.frontend.easy.history),name,opts);
 }));
 
@@ -261,8 +261,8 @@ return reitit.frontend.history.navigate.cljs$core$IFn$_invoke$arity$3(cljs.core.
  *   update fn will see string values for all query params.
  */
 reitit.frontend.easy.set_query = (function reitit$frontend$easy$set_query(var_args){
-var G__27100 = arguments.length;
-switch (G__27100) {
+var G__31328 = arguments.length;
+switch (G__31328) {
 case 1:
 return reitit.frontend.easy.set_query.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -281,11 +281,11 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 return reitit.frontend.history.set_query.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(reitit.frontend.easy.history),new_query_or_update_fn);
 }));
 
-(reitit.frontend.easy.set_query.cljs$core$IFn$_invoke$arity$2 = (function (new_query_or_update_fn,p__27103){
-var map__27104 = p__27103;
-var map__27104__$1 = cljs.core.__destructure_map(map__27104);
-var opts = map__27104__$1;
-var replace = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27104__$1,new cljs.core.Keyword(null,"replace","replace",-786587770));
+(reitit.frontend.easy.set_query.cljs$core$IFn$_invoke$arity$2 = (function (new_query_or_update_fn,p__31329){
+var map__31330 = p__31329;
+var map__31330__$1 = cljs.core.__destructure_map(map__31330);
+var opts = map__31330__$1;
+var replace = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__31330__$1,new cljs.core.Keyword(null,"replace","replace",-786587770));
 return reitit.frontend.history.set_query.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(reitit.frontend.easy.history),new_query_or_update_fn,opts);
 }));
 
